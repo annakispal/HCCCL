@@ -1,0 +1,60 @@
+#RECOGNITION TASK
+#ENCODING PHASE
+
+begin;
+
+array <string> word_list[40] = {"KULLANCS",
+"LOVAGLÁS",
+"KOLERA",
+"KATONA",
+"BETON",
+"MOCSÁR",
+"CSAVARHÚZÓ",
+"MAJORÁNNA",
+"LÁNDZSA",
+"HARCSA",
+"KÖMÉNYMAG",
+"ALUMÍNIUM",
+"ARGENTÍNA",
+"KESZTYŰ",
+"FEJSZE",
+"HENTES",
+"HARMONIKA",
+"KARD",
+"FÉNYMÁSOLÓ",
+"KECSKE",
+"LEPKE",
+"KÖTÉNY",
+"BÚJÓCSKA",
+"ALLERGIA",
+"KESELYŰ",
+"PIZSAMA",
+"HERING",
+"BRAZÍLIA",
+"ANANÁSZ",
+"DOMINÓ",
+"BAGOLY",
+"KAKAÓ",
+"SIVATAG",
+"FAXGÉP",
+"MIKROHULLÁMÚ",
+"MÁLNA",
+"TENISZ",
+"KOKTÉL",
+"HÁRFA",
+"ELEFÁNT"};
+
+instruction1_trial.present();
+
+# encoding trials
+loop int i = 1 until i > 40
+begin
+word_encoding.set_caption (word_list[i]);
+word_encoding.redraw();
+word_encoding_trial.present();
+i = i + 1;
+end;
+
+thanks_trial.present ();
+
+end;

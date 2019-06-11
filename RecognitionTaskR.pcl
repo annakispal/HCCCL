@@ -1,0 +1,81 @@
+#RECOGNITION TASK
+#RECOGNITION PHASE
+
+begin;
+
+#OLD: BETON, KOKTÉL
+array <string> practice_list[5] = {"BETON", "TOLMÁCS", "SZILVA", "KOKTÉL", "SZÖCSKE"}; #PRACTICE
+
+array <string> word_list[40] = {"KESZTYŰ",
+"ELEFÁNT",
+"PELIKÁN",
+"SZAXOFON",
+"LOVAGLÁS",
+"MOCSÁR",
+"SZALVÉTA",
+"SZÁMOLÓGÉP",
+"KÁRÁSZ",
+"ALUMÍNIUM",
+"PULÓVER",
+"FOGÓ",
+"KÖTÉNY",
+"HENTES",
+"MANDARIN",
+"KIRAKÓ",
+"BÚJÓCSKA",
+"MENTA",
+"MEGFÁZÁS",
+"MEDVE",
+"LIMONÁDÉ",
+"TRIATLON",
+"ANANÁSZ",
+"HARCSA",
+"PUSKA",
+"KARTON",
+"KARD",
+"SZITAKÖTŐ",
+"TISZTÁS",
+"ALLERGIA",
+"BAGOLY",
+"KAKAÓ",
+"HÁRFA",
+"KULLANCS",
+"ARGENTÍNA",
+"BULGÁRIA",
+"FAXGÉP",
+"MODELL",
+"CSAVARHÚZÓ",
+"KÖMÉNYMAG"}; #RECOGNITION
+
+#INSTRUCTIONS
+
+instruction1_trial.present();
+instruction2_trial.present();
+
+# PRACTICE TRIALS
+
+loop int i = 1 until i > 5
+begin
+practice.set_caption (practice_list[i]);
+practice.redraw();
+practice_trial.present ();
+i = i + 1;
+end;
+
+instruction3_trial.present();
+
+#RECOGNITION TRIALS
+
+loop int i = 1 until i > 40
+begin
+word_recognition.set_caption (word_list[i]);
+word_recognition.redraw();
+word_recognition_trial.present();
+i = i + 1;
+end;
+
+#THANKS
+
+thanks_trial.present();
+
+end;
