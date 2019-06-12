@@ -9,7 +9,7 @@ default_background_color = 255,255,255;
 active_buttons = 1;
 button_codes = 1; #enter
 response_matching = simple_matching;
-stimulus_properties = trial_phase, string, cue, string, cue_durations, number, cuestatus, string, target, string, ITT, number, trial_number, number;
+stimulus_properties = encoded_word string; # this specifies how the event codes are interpreted in the log. Here, the one event code will be the word shown in a given trial and it is specified as a string. This will show up as a column "encoded_word" in the log
 event_code_delimiter = ",";
 pcl_file = "RecognitionTaskE.pcl";
 begin;
