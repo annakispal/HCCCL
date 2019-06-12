@@ -51,6 +51,7 @@ loop int i = 1 until i > 40
 begin
 word_encoding.set_caption (word_list[i]);
 word_encoding.redraw();
+word_encoding.set_event_code(word_list[i]); # setting the event code is necessary to log the stimulus event with a specific argument. Here this argument will be the word itself
 word_encoding_trial.present();
 i = i + 1;
 end;
