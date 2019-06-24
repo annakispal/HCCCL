@@ -25,7 +25,7 @@ begin;
 trial {
  trial_duration = forever;
  trial_type = specific_response; # if you use first_response, your trial will go off with any active button pressed
- terminator_button = 1; # for the specific response you need to define the terminator button stimulus_event {
+ terminator_button = 1; #enter # for the specific response you need to define the terminator button stimulus_event {
   picture {
    background_color = 255, 255, 255;
    text {background_color = 255,255,255; font_color = 0,0,139,200; font = "Arial";
