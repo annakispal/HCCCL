@@ -18,47 +18,38 @@ begin;
 
 trial {
  trial_duration = forever;
- trial_type = first_response;
+ trial_type = specific_response;
+ terminator_button = 1; #enter
  
  stimulus_event {
   picture {
    background_color = 255, 255, 255;
    
    text {background_color = 255,255,255; font_color = 0,0,139,200; font = "Arial";
-     caption = "A következő részben a korábban látott szavak mellett új szavakat is látni fog. 
-Arra kérjük Önt, hogy gombnyomással jelezze, 
-hogy az adott szót látta-e korábban (RÉGI) vagy sem (ÚJ).
-
-A RÉGI szavak esetén nyomja meg a BAL nyíl gombot.
-Az ÚJ szavak esetén nyomja meg a JOBB nyíl gombot. 
-
-A továbblépéshez nyomja meg az ENTER gombot.";
-    } instruction1;
+     caption = "A következő részben a korábban látott szavak mellett új szavakat is látni fog.\nArra kérjük Önt, hogy gombnyomással jelezze, 
+hogy az adott szót látta-e korábban (RÉGI) vagy sem (ÚJ).\nA RÉGI szavak esetén nyomja meg a BAL nyíl gombot.\nAz ÚJ szavak esetén nyomja meg a JOBB nyíl gombot.\nA továbblépéshez nyomja meg az ENTER gombot.";
+    } instruction1_text;
     x = 0; y = 0;
   }instruction1_pic;
-  target_button = 3;
- }instruction1_event;
+  target_button = 1;
+ }instruction1_event
 }instruction1_trial;
 
 trial {
  trial_duration = forever;
- trial_type = first_response;
+  trial_type = specific_response;
+  terminator_button = 1; #enter
 
  stimulus_event {
   picture {
    background_color = 255,255,255;
 
    text {background_color = 255,255,255; font_color = 0,0,139,200; font = "Arial";
-     caption = "A következő részben pár gyakorló szót fog látni.
-
-A RÉGI szavak esetén nyomja meg a BAL nyíl gombot.
-Az ÚJ szavak esetén nyomja meg a JOBB nyíl gombot.
-
-A továbblépéshez nyomja meg az ENTER gombot.";
-    } instruction2;
+     caption = "A következő részben pár gyakorló szót fog látni.\nA RÉGI szavak esetén nyomja meg a BAL nyíl gombot.\nAz ÚJ szavak esetén nyomja meg a JOBB nyíl gombot.\nA továbblépéshez nyomja meg az ENTER gombot.";
+    } instruction2_text;
     x = 0; y = 0;
   }instruction2_pic;
-  target_button = 3;
+  target_button = 1;
  }instruction2_event;
 }instruction2_trial;
 
@@ -73,10 +64,10 @@ trial{
    
    text {background_color = 255,255,255; font_color = 0,0,139,200; font_size = 100; font = "Arial";
     caption = "PRACTICE";
-   } practice;
+   } practice_text;
     x = 0; y = 0;
   }practice_pic;
-  target_button = 1,2;
+  target_button = 2,3;
  }practice_event;
 }practice_trial;
 
@@ -84,7 +75,8 @@ trial{
 
 trial {
  trial_duration = forever;
- trial_type = first_response;
+ trial_type = specific_response;
+ terminator_button = 1; #enter
 
  stimulus_event {
   picture {
@@ -92,10 +84,10 @@ trial {
 
    text {background_color = 255,255,255; font_color = 0,0,139,200; font = "Arial";
      caption = "Ha készen áll a szavakra, nyomja meg az ENTER gombot.";
-    } instruction3;
+    } instruction3_text;
     x = 0; y = 0;
   }instruction3_pic;
-  target_button = 3;
+  target_button = 1;
  }instruction3_event;
 }instruction3_trial;
 
@@ -109,10 +101,10 @@ trial{
    
    text {background_color = 255,255,255; font_color = 0,0,139,200; font_size = 100; font = "Arial";
     caption = "WORDS";
-   } word_recognition;
+   } word_recognition_text;
     x = 0; y = 0;
   }word_recognition_pic;
-  target_button = 1, 2;
+  target_button = 2, 3;
  }word_recognition_event;
 }word_recognition_trial;
 
@@ -120,18 +112,18 @@ trial{
 
 trial{
  trial_duration = forever;
- trial_type = first_response;
+ trial_type = specific_response;
+ terminator_button = 1; #enter
 
  stimulus_event {
   picture {
    background_color = 255,255,255;
 
    text { font_color = 0,0,139,200;
-    caption = "Köszönjük a figyelmét, ez a feladat vége!
-A kilépéshez nyomja meg az ENTER gombot.";
-    } thanks;
+    caption = "Köszönjük a figyelmét, ez a feladat vége!\nA kilépéshez nyomja meg az ENTER gombot.";
+    } thanks_text;
     x = 0; y = 0;
    } thanks_pic;
-   target_button = 3;
+   target_button = 1;
   } thanks_event;
  } thanks_trial;
