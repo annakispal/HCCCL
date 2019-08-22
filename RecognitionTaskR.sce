@@ -18,7 +18,8 @@ begin;
 
 trial {
  trial_duration = forever;
- trial_type = first_response;
+ trial_type = specific_response;
+ terminator_button = 3;
  
  stimulus_event {
   picture {
@@ -42,7 +43,8 @@ A továbblépéshez nyomja meg az ENTER gombot.";
 
 trial {
  trial_duration = forever;
- trial_type = first_response;
+ trial_type = specific_response;
+ terminator_button = 3;
 
  stimulus_event {
   picture {
@@ -66,6 +68,8 @@ A továbblépéshez nyomja meg az ENTER gombot.";
 
 trial{
  trial_duration = 3000;
+ trial_type = fixed;
+ terminator_button = 1, 2;
 
  stimulus_event {
   picture {
@@ -84,7 +88,8 @@ trial{
 
 trial {
  trial_duration = forever;
- trial_type = first_response;
+ trial_type = specific_response;
+ terminator_button = 3;
 
  stimulus_event {
   picture {
@@ -103,6 +108,9 @@ trial {
 
 trial{
  trial_duration = 3000;
+ trial_type = fixed;
+ terminator_button = 1, 2;
+ 
  stimulus_event {
   picture {
    background_color = 255,255,255;
@@ -119,8 +127,9 @@ trial{
 #THANKS
 
 trial{
- trial_duration = forever;
- trial_type = first_response;
+trial_duration = forever;
+ trial_type = specific_response;
+ terminator_button = 3;
 
  stimulus_event {
   picture {
