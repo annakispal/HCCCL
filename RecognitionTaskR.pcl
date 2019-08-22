@@ -6,46 +6,46 @@ begin;
 #OLD: BETON, KOKTÉL
 array <string> practice_list[5] = {"BETON", "TOLMÁCS", "SZILVA", "KOKTÉL", "SZÖCSKE"}; #PRACTICE
 
-array <string> word_list[40] = {"KESZTYŰ",
-"ELEFÁNT",
-"PELIKÁN",
-"SZAXOFON",
-"LOVAGLÁS",
-"MOCSÁR",
-"SZALVÉTA",
-"SZÁMOLÓGÉP",
-"KÁRÁSZ",
-"ALUMÍNIUM",
-"PULÓVER",
-"FOGÓ",
-"KÖTÉNY",
-"HENTES",
-"MANDARIN",
-"KIRAKÓ",
-"BÚJÓCSKA",
-"MENTA",
-"MEGFÁZÁS",
-"MEDVE",
-"LIMONÁDÉ",
-"TRIATLON",
-"ANANÁSZ",
-"HARCSA",
-"PUSKA",
-"KARTON",
-"KARD",
-"SZITAKÖTŐ",
-"TISZTÁS",
-"ALLERGIA",
-"BAGOLY",
-"KAKAÓ",
-"HÁRFA",
-"KULLANCS",
-"ARGENTÍNA",
-"BULGÁRIA",
-"FAXGÉP",
-"MODELL",
-"CSAVARHÚZÓ",
-"KÖMÉNYMAG"}; #RECOGNITION
+array <string> word_list[40] = {"KESZTYŰ", #o
+"ELEFÁNT", #o
+"PELIKÁN", #n
+"SZAXOFON", #n
+"LOVAGLÁS", #o
+"MOCSÁR", #o
+"SZALVÉTA", #n
+"SZÁMOLÓGÉP", #n
+"KÁRÁSZ", #n
+"ALUMÍNIUM", #o
+"PULÓVER", #n
+"FOGÓ", #n
+"KÖTÉNY", #o
+"HENTES", #o
+"MANDARIN", #n
+"KIRAKÓ", #n
+"BÚJÓCSKA", #o
+"MENTA", #n
+"MEGFÁZÁS", #n
+"MEDVE", #n
+"LIMONÁDÉ", #n
+"TRIATLON", #n
+"ANANÁSZ", #o
+"HARCSA", #o
+"PUSKA", #n
+"KARTON", #n
+"KARD", #o
+"SZITAKÖTŐ", #n
+"TISZTÁS", #n
+"ALLERGIA", #o
+"BAGOLY", #o
+"KAKAÓ", #o
+"HÁRFA", #o
+"KULLANCS", #o
+"ARGENTÍNA", #o
+"BULGÁRIA", #n
+"FAXGÉP", #o
+"MODELL", #n
+"CSAVARHÚZÓ", #o
+"KÖMÉNYMAG"}; #o}; #RECOGNITION
 
 #INSTRUCTIONS
 
