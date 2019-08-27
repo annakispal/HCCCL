@@ -3,49 +3,59 @@
 
 begin;
 
-#OLD: BETON, KOKTÉL
-array <string> practice_list[5] = {"BETON", "TOLMÁCS", "SZILVA", "KOKTÉL", "SZÖCSKE"}; #PRACTICE
 
-array <string> word_list[40] = {"KESZTYŰ", #o
-"ELEFÁNT", #o
-"PELIKÁN", #n
-"SZAXOFON", #n
-"LOVAGLÁS", #o
-"MOCSÁR", #o
-"SZALVÉTA", #n
-"SZÁMOLÓGÉP", #n
-"KÁRÁSZ", #n
-"ALUMÍNIUM", #o
-"PULÓVER", #n
-"FOGÓ", #n
-"KÖTÉNY", #o
-"HENTES", #o
-"MANDARIN", #n
-"KIRAKÓ", #n
-"BÚJÓCSKA", #o
-"MENTA", #n
-"MEGFÁZÁS", #n
-"MEDVE", #n
-"LIMONÁDÉ", #n
-"TRIATLON", #n
-"ANANÁSZ", #o
-"HARCSA", #o
-"PUSKA", #n
-"KARTON", #n
-"KARD", #o
-"SZITAKÖTŐ", #n
-"TISZTÁS", #n
-"ALLERGIA", #o
-"BAGOLY", #o
-"KAKAÓ", #o
-"HÁRFA", #o
-"KULLANCS", #o
-"ARGENTÍNA", #o
-"BULGÁRIA", #n
-"FAXGÉP", #o
-"MODELL", #n
-"CSAVARHÚZÓ", #o
-"KÖMÉNYMAG"}; #o}; #RECOGNITION
+array <string> practice_list[5] [2]= {
+{"BETON", "1"},
+{"TOLMÁCS", "2"},
+{"SZILVA", "2"},
+{"KOKTÉL", "1"},
+{"SZÖCSKE", "2"}
+}; #PRACTICE
+
+array <string> word_list[40] [2] = {
+{"KESZTYŰ", "1"},
+{"ELEFÁNT", "1"},
+{"PELIKÁN", "2"},
+{"SZAXOFON", "2"},
+{"LOVAGLÁS", "1"},
+{"MOCSÁR", "1"},
+{"SZALVÉTA", "2"},
+{"SZÁMOLÓGÉP", "2"},
+{"KÁRÁSZ", "2"},
+{"ALUMÍNIUM", "1"},
+{"PULÓVER", "2"},
+{"FOGÓ", "2"},
+{"KÖTÉNY", "1"},
+{"HENTES", "1"},
+{"MANDARIN", "2"},
+{"KIRAKÓ", "2"},
+{"BÚJÓCSKA", "1"},
+{"MENTA", "2"},
+{"MEGFÁZÁS", "2"},
+{"MEDVE", "2"},
+{"LIMONÁDÉ", "2"},
+{"TRIATLON", "2"},
+{"ANANÁSZ", "1"},
+{"HARCSA", "1"},
+{"PUSKA", "2"},
+{"KARTON", "2"},
+{"KARD", "1"},
+{"SZITAKÖTŐ", "2"},
+{"TISZTÁS", "2"},
+{"ALLERGIA", "1"},
+{"BAGOLY", "1"},
+{"KAKAÓ", "1"},
+{"HÁRFA", "1"},
+{"KULLANCS", "1"},
+{"ARGENTÍNA", "1"},
+{"BULGÁRIA", "2"},
+{"FAXGÉP", "1"},
+{"MODELL", "2"},
+{"CSAVARHÚZÓ", "1"},
+{"KÖMÉNYMAG", "1"}
+};
+
+#RECOGNITION
 
 #INSTRUCTIONS
 
@@ -56,7 +66,7 @@ instruction2_trial.present();
 
 loop int i = 1 until i > 5
 begin
-practice.set_caption (practice_list[i]);
+practice.set_caption (practice_list[i][1]);
 practice.redraw();
 practice_trial.present ();
 i = i + 1;
@@ -68,9 +78,12 @@ instruction3_trial.present();
 
 loop int i = 1 until i > 40
 begin
-word_recognition.set_caption (word_list[i]);
+word_recognition.set_caption (word_list[i][1]);
 word_recognition.redraw();
+string oldnew = word_list[i][2];
+word_recognition_event.set_event_code("type," + word_list[i][2]);
 word_recognition_trial.present();
+
 i = i + 1;
 end;
 
