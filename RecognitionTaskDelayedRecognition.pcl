@@ -63,8 +63,8 @@ instruction2_trial.present();
 
 loop int i = 1 until i > 5
 begin
-practice.set_caption (practice_list[i][1]);
-practice.redraw();
+practice_text.set_caption (practice_list[i][1]);
+practice_text.redraw();
 practice_trial.present ();
 i = i + 1;
 end;
@@ -75,8 +75,8 @@ instruction3_trial.present();
 
 loop int i = 1 until i > 40
 begin
-word_recognition.set_caption (word_list[i][1]);
-word_recognition.redraw();
+word_recognition_text.set_caption (word_list[i][1]);
+word_recognition_text.redraw();
 string oldnew = word_list[i][2];
 word_recognition_event.set_event_code("type," + word_list[i][2]);
 word_recognition_trial.present();
