@@ -1,5 +1,5 @@
 <ver>20.3</ver>
-<efn>C:\Users\kispa\Documents\PROGRAMMING\RecognitionTaskRecognition\RecognitionTaskR.exp</efn>
+<efn>C:\Users\kispa\Downloads\HCCCL_RecognitionTask-master\HCCCL_RecognitionTask-master\R\RecognitionTaskR.exp</efn>
 <author></author>
 <con>
 <pause>P</pause>
@@ -40,11 +40,11 @@
 <lfn></lfn>
 </docs>
 <dp_list></dp_list>
-<dsd>C:\Users\kispa\Documents\PROGRAMMING\RecognitionTaskRecognition\Stimuli</dsd>
+<dsd>C:\Users\kispa\Downloads\HCCCL_RecognitionTask-master\HCCCL_RecognitionTask-master\R\Stimuli</dsd>
 <dwm>0</dwm>
 <dxv>8</dxv>
 <efs>
-<filename>C:\Users\kispa\Documents\PROGRAMMING\RecognitionTaskRecognition\RecognitionTaskR.sce</filename>
+<filename>C:\Users\kispa\Downloads\HCCCL_RecognitionTask-master\HCCCL_RecognitionTask-master\R\RecognitionTaskR.sce</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version></exp_version>
@@ -119,11 +119,11 @@
 <idt>0</idt>
 <ilc>0</ilc>
 <ip_chans></ip_chans>
-<lfd>C:\Users\kispa\Documents\PROGRAMMING\RecognitionTaskRecognition\LogFiles</lfd>
+<lfd>C:\Users\kispa\Downloads\HCCCL_RecognitionTask-master\HCCCL_RecognitionTask-master\R\LogFiles</lfd>
 <lnb>2</lnb>
-<lno>1</lno>
+<lno>3</lno>
 <log>
-<append_counter>0</append_counter>
+<append_counter>1</append_counter>
 <delimiter>9</delimiter>
 <general_list>1</general_list>
 <its>0</its>
@@ -643,7 +643,7 @@
 <offset>28</offset>
 </idv>
 <overrides></overrides>
-<sfn>C:\Users\kispa\Documents\PROGRAMMING\RecognitionTaskRecognition\RecognitionTaskR.sce</sfn>
+<sfn>C:\Users\kispa\Downloads\HCCCL_RecognitionTask-master\HCCCL_RecognitionTask-master\R\RecognitionTaskR.sce</sfn>
 </sce>
 <sct>
 <capture_device>
@@ -722,4 +722,4 @@
 <unc></unc>
 <upb>0</upb>
 <urp>0</urp>
-<wob>1</wob>
+<wob>0</wob>
