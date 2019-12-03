@@ -81,7 +81,7 @@ begin
 word_recognition.set_caption (word_list[i][1]);
 word_recognition.redraw();
 string oldnew = word_list[i][2];
-word_recognition_event.set_event_code("type," + word_list[i][2]);
+word_recognition_event.set_event_code(word_list[i][1] + "," + word_list[i][2]);
 word_recognition_trial.present();
 
 i = i + 1;
