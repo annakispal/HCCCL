@@ -1,0 +1,9 @@
+# defining basic events
+picture: event_type == "Picture"
+response: event_type == "Response"
+
+# defining stimulus response pairs and printing this with all available properties as defined by the .sce
+# default: rec_response_pair_set:: simple_match_all (200, 5000, picture, response)
+rec_response_pair_set:: simple_match_all (200, 4000, picture, response)
+event_pair_table rec_responses_pair_table (code1, cue1, code2, time_diff)
+print rec_responses_pair_table (rec_response_pair_set, "\t", "\n" )
