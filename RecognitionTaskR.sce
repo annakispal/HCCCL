@@ -9,7 +9,7 @@ default_background_color = 255,255,255;
 active_buttons = 3;
 button_codes = 1, 2, 3; #1=yes 2=no 3=enter
 response_matching = simple_matching;
-stimulus_properties = trail_phase, string, cue, string, cue_durations, number, cuestatus, string, target, string, ITT, number, trial_number, number;
+stimulus_properties = word_shown, string, requested_response, number;
 event_code_delimiter = ",";
 pcl_file = "RecognitionTaskR.pcl";
 begin;
